@@ -1,0 +1,39 @@
+{
+  "name": "del.js",
+  "version": "1.0.0",
+  "description": "The API Wrapper for Discord's unbiased list, giving bots and servers of all sizes a big chance!",
+  "main": "del.js",
+  "scripts": {
+    "test": "node del.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discordextremelist/del.js.git"
+  },
+  "keywords": [
+    "api",
+    "discord",
+    "discordbotlist",
+    "botlist",
+    "discordapi",
+    "botlistapi",
+    "discordextremelist",
+    "discordextremelistapi",
+    "delapi",
+    "deljs",
+    "delapijs",
+    "poststats",
+    "delapipoststats",
+    "botapi",
+    "delbotapi"
+  ],
+  "author": "Connor!#0800",
+  "license": "OSL-3.0",
+  "bugs": {
+    "url": "https://github.com/discordextremelist/del.js/issues"
+  },
+  "homepage": "https://github.com/discordextremelist/del.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
