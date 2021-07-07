@@ -4,7 +4,7 @@
 
 #### Importing and "initializing" the package
 ```js
-const DEL = require('del.js') // importing del
+const DEL = require('del.js'); // importing del
 const del = new DEL("auth token", "client id") // initializing it
 ```
 
