@@ -50,6 +50,6 @@ jobs:
           scope: "@discordextremelist"
       - run: npm ci
       - run: echo "registry=https://registry.npmjs.org/" >> .npmrc
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
