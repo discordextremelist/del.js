@@ -1,20 +1,21 @@
-const fetch = require ('node-fetch');
+import fetch from "node-fetch";
+import { version } from "./package.json";
 
 class del {
     constructor(key, id) {
-        this.key = key // authorization token
-        this.id = id // client id
+        this.key = key // DEL API token
+        this.id = id // Discord client ID
     }
 
     async post(guildCount, shardCount) {
-        let body = shardCount ? { 'guildCount': guildCount, 'shardCount': shardCount } : { 'guildCount': guildCount, 'shardCount': 0 }
+        let body = shardCount ? { "guildCount": guildCount, "shardCount": shardCount } : { "guildCount": guildCount, "shardCount": 0 }
 
         await fetch(`https://api.discordextremelist.xyz/v2/bot/${this.id}/stats`, {
-            method: 'POST',
+            method: "POST",
             body: JSON.stringify(body),
-            headers: { 'Content-Type': 'application/json', 'Authorization': this.key },
+            headers: { "User-Agent": `DEL.js/${version}`, "Content-Type": "application/json", "Authorization": this.key },
         }).then(async (res) => { console.log(await res.json()) })
     }
 }
 
-module.exports = del; 
+export default del; 
