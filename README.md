@@ -1,6 +1,8 @@
 # DEL.js API Wrapper
 This is a JavaScript API wrapper for Discord Extreme List's API.
 
+[![Node.js CI](https://github.com/discordextremelist/del.js/actions/workflows/node.js.yml/badge.svg)](https://github.com/discordextremelist/del.js/actions/workflows/node.js.yml)
+
 ## Getting Started
 
 #### Importing and "initialising" the package
