@@ -1,11 +1,12 @@
-# DiscordExtremeList's API Wrapper
+# DEL.js API Wrapper
+This is a JavaScript API wrapper for Discord Extreme List's API.
 
 ## Getting Started
 
-#### Importing and "initializing" the package
+#### Importing and "initialising" the package
 ```js
-const DEL = require('del.js'); // importing del
-const del = new DEL('auth token', 'client id'); // initializing it
+const DEL = require("del.js"); // Importing DEL.js
+const del = new DEL("API auth token", "Discord client ID"); // Initialising it
 ```
 
 ###### Arguments
@@ -16,21 +17,21 @@ id | Snowflake | false | Your bot's client ID.
 
 --- 
 
-### example
+### Discord.JS Example
 
 ```js
-const Discord = require("discord.js")
-const client = new Discord.Client()
+const Discord = require("discord.js");
+const client = new Discord.Client();
 const prefix = "del.";
-const DEL = require("del.js")
-const del = new DEL("auth token", client.user.id,)
+const DEL = require("del.js");
+const del = new DEL("API auth token", client.user.id);
 
 client.on("ready", () => {
-console.log(`Logged in as ${client.user.tag}.`)
-setInterval(() => {
-   del.post(client.guilds.cache.size, 0) // You will probably need to change this.
-  }, 600000) // 10 minutes in Milliseconds
+    console.log(`Logged in as ${client.user.tag}.`);
+    setInterval(() => {
+        del.post(client.guilds.cache.size, 0) // You will probably need to change this.
+    }, 600000); // 10 minutes in milliseconds
 });
 
-client.login("token")
+client.login("bot token");
 ```
