@@ -1,5 +1,5 @@
-import fetch from "node-fetch";
-import { version } from "./package.json";
+const fetch = require("node-fetch");
+const { version } = require("./packages.json");
 
 class del {
     constructor(key, id) {
@@ -18,4 +18,4 @@ class del {
     }
 }
 
-export default del; 
+module.exports = del;
