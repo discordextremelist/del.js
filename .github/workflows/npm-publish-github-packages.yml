@@ -49,7 +49,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: "@discordextremelist"
       - run: npm ci
-      - run: echo "registry=https://registry.npmjs.org/@discordextremelist" >> .npmrc
+      - run: echo "registry=https://registry.npmjs.org/" >> .npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
