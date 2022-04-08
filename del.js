@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const { version } = require("./packages.json");
+const { version } = require("./package.json");
 
 class del {
     constructor(key, id) {
