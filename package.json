@@ -2,9 +2,20 @@
     "name": "@discordextremelist/del.js",
     "version": "1.0.1",
     "description": "The API Wrapper for Discord's unbiased list, giving bots and servers of all sizes a big chance!",
-    "main": "del.js",
+    "main": "./dist/del.js",
+    "module": "./dist/del.mjs",
+    "typings": "./dist/del.d.ts",
+    "exports": {
+        "import": "./dist/del.mjs",
+        "require": "./dist/del.js",
+        "types": "./dist/del.d.ts"
+    },
+    "files": [
+        "dist"
+    ],
     "scripts": {
-        "test": "node del.js"
+        "test": "node dist/del.js",
+        "build": "tsup del.ts --format cjs,esm --dts"
     },
     "repository": {
         "type": "git",
@@ -37,6 +48,11 @@
     },
     "homepage": "https://github.com/discordextremelist/del.js#readme",
     "dependencies": {
-        "node-fetch": "^2.6.7"
+        "discord-api-types": "^0.37.16",
+        "undici": "^5.12.0"
+    },
+    "devDependencies": {
+        "tsup": "^6.4.0",
+        "typescript": "^4.8.4"
     }
 }

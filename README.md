@@ -24,7 +24,6 @@ id | Snowflake | false | Your bot's client ID.
 ```js
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "del.";
 const DEL = require("del.js");
 const del = new DEL("API auth token", client.user.id);
 
