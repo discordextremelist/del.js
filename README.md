@@ -8,7 +8,7 @@ This is a JavaScript API wrapper for Discord Extreme List's API.
 #### Importing and "initialising" the package
 ```js
 const DEL = require("del.js"); // Importing DEL.js
-const del = new DEL("API auth token", "Discord client ID"); // Initialising it
+const del = new DEL.Del("API auth token", "Discord client ID"); // Initialising it
 ```
 
 ###### Arguments
@@ -25,7 +25,7 @@ id | Snowflake | false | Your bot's client ID.
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const DEL = require("del.js");
-const del = new DEL("API auth token", client.user.id);
+const del = new DEL.Del("API auth token", client.user.id);
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}.`);
