@@ -14,7 +14,7 @@
         "dist"
     ],
     "scripts": {
-        "test": "node dist/del.js",
+        "test": "npm run build && node dist/del.js",
         "build": "tsup del.ts --format cjs,esm --dts"
     },
     "repository": {
