@@ -1,6 +1,6 @@
 {
     "name": "@discordextremelist/del.js",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "The API Wrapper for Discord's unbiased list, giving bots and servers of all sizes a big chance!",
     "main": "./dist/del.js",
     "module": "./dist/del.mjs",
